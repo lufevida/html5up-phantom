@@ -1,0 +1,52 @@
+<footer id="footer">
+  <div class="inner">
+    <section>
+      <h2>Get in touch</h2>
+      <form method="post" action="#">
+        <div class="field half first">
+          <input type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="field half">
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="field">
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send" class="special" /></li>
+        </ul>
+      </form>
+    </section>
+    <section>
+      <h2>Follow</h2>
+      <ul class="icons">
+        {% if site.twitter %}
+          <li><a href="https://twitter.com/{{ site.twitter }}" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+        {% endif %}
+        {% if site.facebook %}
+        <li><a href="https://www.facebook.com/{{ site.facebook }}" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+        {% endif %}
+        {% if site.instagram %}
+        <li><a href="https://www.instagram.com/{{ site.instagram }}" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+        {% endif %}
+        {% if site.dribbble %}
+        <li><a href="https://dribbble.com/{{ site.dribbble }}" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+        {% endif %}
+        {% if site.github %}
+        <li><a href="https://github.com/{{ site.github }}" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+        {% endif %}
+        {% if site.500px %}
+        <li><a href="https://500px.com/{{ site.500px }}" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+        {% endif %}
+        {% if site.phone %}
+        <li><a href="tel:{{ site.phone }}" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+        {% endif %}
+        <li><a href="mailto:{{ site.email }}" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="icon style2 fa-rss"><span class="label">RSS</span></a></li>
+      </ul>
+    </section>
+    <ul class="copyright">
+      <li>&copy; {{ site.copyright }}. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </div>
+</footer>

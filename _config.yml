@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Phantom
+email: your-email@domain.com
+phone: 012-345-6789
+copyright: Copyright Owner
+tagline: This is Phantom, a free, fully responsive site<br />template designed by <a href="http://html5up.net">HTML5 UP</a>.
+description: > # this means to ignore newlines until "baseurl:"
+  Etiam quis viverra lorem, in semper lorem.
+  Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.
+  Lorem ipsum dolor sit amet nullam dolore.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter: username
+facebook: username
+instagram: username
+dribbble: username
+github: username
+500px: username
+
+# Build settings
+markdown: kramdown

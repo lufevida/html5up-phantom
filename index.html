@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<header>
+	<h1>{{ site.tagline }}</h1>
+	<p>{{ site.description }}</p>
+</header>
+<section class="tiles">
+	{% for post in site.posts %}
+		<article class="{{ post.style }}">
+			<span class="image">
+				<img src="{{ post.image }}" alt="" />
+			</span>
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				<p>{{ post.date | date: "%b %-d, %Y" }}</p>
+				<h2>{{ post.title }}</h2>
+				<div class="content">
+					<p>{{ post.tagline }}</p>
+				</div>
+			</a>
+		</article>
+	{% endfor %}	
+</section>

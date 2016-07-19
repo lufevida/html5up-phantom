@@ -1,0 +1,26 @@
+<header id="header">
+  <div class="inner">
+    <!-- Logo -->
+      <a href="{{ site.baseurl }}/" class="logo">
+        <span class="symbol"><img src="{{ site.baseurl }}/images/logo.svg" alt="" /></span><span class="title">{{ site.title }}</span>
+      </a>
+    <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav>
+  </div>
+</header>
+
+<nav id="menu">
+  <h2>Menu</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+        <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
