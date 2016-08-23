@@ -15,8 +15,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Etiam quis viverra lorem, in semper lorem.
   Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.
   Lorem ipsum dolor sit amet nullam dolore.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/html5up-phantom" # the subpath of your site, e.g. /blog
+url: "https://lufevida.github.io" # the base hostname & protocol for your site
 twitter: username
 facebook: username
 instagram: username
